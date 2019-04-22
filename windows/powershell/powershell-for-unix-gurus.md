@@ -15,7 +15,7 @@ Unix | Windows | Alias
 `pwd` | `Get-Location` | `pwd`
 `rm` | `Remove-Item` | `rm`
 `sha256sum` | `Get-FileHash -Algorithm SHA256` |
-`which <cmd>` | `Get-Command <cmd> | Select -ExpandProperty Path` |
+`which <cmd>` | `Get-Command <cmd> \| Select -ExpandProperty Path` |
 
 ## Use cases
 
@@ -23,7 +23,7 @@ Unix | Windows
 --- | ---
 `echo $USER` | `Write-Output $env:USERNAME`
 `find . -type d` |  `Get-ChildItem -Recurse -Directory`
-`find . -type f -name '*.tex' | grep 'TODO'` | `Get-ChildItem -Recurse -Path . -File -Filter '*.tex' | Select-String -CaseSensitive 'TODO'`
+`find . -type f -name '*.tex' \| grep 'TODO'` | `Get-ChildItem -Recurse -Path . -File -Filter '*.tex' \| Select-String -CaseSensitive 'TODO'`
 
 ## User configuration (.bashrc)
 
