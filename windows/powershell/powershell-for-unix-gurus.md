@@ -15,6 +15,7 @@ Unix | Windows | Alias
 `pwd` | `Get-Location` | `pwd`
 `rm` | `Remove-Item` | `rm`
 `sha256sum` | `Get-FileHash -Algorithm SHA256` |
+`shutdown -p now` | `shutdown /s /t 0`
 `which <cmd>` | `Get-Command <cmd> \| Select -ExpandProperty Path` |
 
 ## Use cases
