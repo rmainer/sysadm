@@ -8,6 +8,7 @@ Unix | Windows | Alias
 `echo` | `Write-Output` | `echo`
 `find` | `Get-ChildItem` | 
 `grep` | `Select-String` | 
+`kill` | `Stop-Process` | `kill`
 `ls` | `Get-ChildItem` | `ls`
 `man` | `Get-Help` |
 `md5sum` | `Get-FileHash -Algorithm MD5` |
