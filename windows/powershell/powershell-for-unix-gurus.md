@@ -2,6 +2,7 @@
 
 Unix | Windows | Alias
 --- | --- | ---
+`&` | `Start-Process -NoNewWindow -ArgumentList ...` |
 `alias` | `Get-Alias` |
 `cat` | `Get-Content` |
 `cd` | `Set-Location` | `cd`
@@ -10,13 +11,15 @@ Unix | Windows | Alias
 `grep` | `Select-String` | 
 `kill` | `Stop-Process` | `kill`
 `ls` | `Get-ChildItem` | `ls`
-`man` | `Get-Help` |
+`man` | `Get-Help -Detailed` |
 `md5sum` | `Get-FileHash -Algorithm MD5` |
 `ps` | `Get-Process` | `ps`
 `pwd` | `Get-Location` | `pwd`
 `rm` | `Remove-Item` | `rm`
 `sha256sum` | `Get-FileHash -Algorithm SHA256` |
-`shutdown -p now` | `shutdown /s /t 0`
+`shutdown -p now` | `shutdown /s /t 0` |
+`su` | `Start-Process powershell.exe -Verb runAs` | 
+`sudo` | `runas /user:Administrator <cmd>` | 
 `which <cmd>` | `Get-Command <cmd> \| Select -ExpandProperty Path` |
 
 ## Use cases
