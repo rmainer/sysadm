@@ -13,6 +13,7 @@ Unix | Windows | Alias
 `ls` | `Get-ChildItem` | `ls`
 `man` | `Get-Help -Detailed` |
 `md5sum` | `Get-FileHash -Algorithm MD5` |
+`mv` | `Move-Item` | `mv`
 `ps` | `Get-Process` | `ps`
 `pwd` | `Get-Location` | `pwd`
 `rm` | `Remove-Item` | `rm`
