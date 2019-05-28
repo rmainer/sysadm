@@ -21,6 +21,7 @@ Unix | Windows | Alias
 `shutdown -p now` | `shutdown /s /t 0` |
 `su` | `Start-Process powershell.exe -Verb runAs` | 
 `sudo` | `runas /user:Administrator <cmd>` | 
+`wget` | `Invoke-WebRequest -Uri <URI> -OutFile <FILE>` | `wget`
 `which <cmd>` | `Get-Command <cmd> \| Select -ExpandProperty Path` |
 
 ## Use cases
